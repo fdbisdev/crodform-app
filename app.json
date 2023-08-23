@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "CrowdformApp",
-    "slug": "CrowdformApp",
+    "name": "crowdform-app",
+    "slug": "crowdform-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
