@@ -3,8 +3,8 @@ import React, { useMemo } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { Login } from '../pages';
-import { RootParamList } from '../utils/types';
+import { Login } from '@pages';
+import { RootParamList } from '@utils';
 
 const Stack = createNativeStackNavigator<RootParamList>();
 
