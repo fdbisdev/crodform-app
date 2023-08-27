@@ -8,9 +8,8 @@ const styles = StyleSheet.create({
   },
   inputLabel: {
     color: '#a09f9f',
-    // fontFamily: 'Sintony-Regular, Helvetica',
+    fontFamily: 'SintonyBold',
     fontSize: 11,
-    fontWeight: '500',
     letterSpacing: -0.22,
     marginBottom: 5,
   },

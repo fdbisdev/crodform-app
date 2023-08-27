@@ -17,15 +17,13 @@ const styles = StyleSheet.create({
   },
   titleText: {
     color: '#000000',
-    // fontFamily: 'Sintony-Regular, Helvetica',
-    fontWeight: '600',
+    fontFamily: 'SintonyBold',
     fontSize: 17,
     letterSpacing: -0.2,
   },
   subtitleText: {
     color: colors.subtitleGrey,
-    // fontFamily: 'Rambla-Regular, Helvetica',
-    fontWeight: '400',
+    fontFamily: 'SintonyRegular',
     fontSize: 12,
     letterSpacing: -0.22,
   },

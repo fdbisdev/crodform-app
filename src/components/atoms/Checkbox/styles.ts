@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   text: {
     textDecorationLine: 'none',
     color: colors.subtitleGrey,
-    fontFamily: 'Sintony-Regular, Helvetica',
+    fontFamily: 'SintonyRegular',
     fontSize: 12,
     fontWeight: '400',
     lineHeight: 15,

@@ -1200,6 +1200,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.48.0.tgz#642633964e217905436033a2bd08bf322849b7fb"
   integrity sha512-ZSjtmelB7IJfWD2Fvb7+Z+ChTIKWq6kjda95fLcQKNS5aheVHn4IkfgRQE3sIIzTcSLwLcLZUD9UBt+V7+h+Pw==
 
+"@expo-google-fonts/sintony@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/sintony/-/sintony-0.2.3.tgz#1937973556fea1dbb3cf13dbb773ebcc7f92f2f3"
+  integrity sha512-6LGkrk1H2m/BonE5DzkgQtEfBVta/P1/Fsdb+ZNp7dBHxw3R/0MfCLk+o+Ei9NpZkhwvdB2PjnG676Hr4cy6Dg==
+
 "@expo/bunyan@4.0.0", "@expo/bunyan@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@expo/bunyan/-/bunyan-4.0.0.tgz#be0c1de943c7987a9fbd309ea0b1acd605890c7b"
@@ -3858,7 +3863,7 @@ expo-file-system@~15.4.0, expo-file-system@~15.4.3:
   dependencies:
     uuid "^3.4.0"
 
-expo-font@~11.4.0:
+expo-font@^11.4.0, expo-font@~11.4.0:
   version "11.4.0"
   resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-11.4.0.tgz#e2d31c0bb76ba3c37c2d84703a49aeafc3afef28"
   integrity sha512-nkmezCFD7gR/I6R+e3/ry18uEfF8uYrr6h+PdBJu+3dawoLOpo+wFb/RG9bHUekU1/cPanR58LR7G5MEMKHR2w==

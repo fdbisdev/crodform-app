@@ -4,8 +4,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   subtitle: {
     color: colors.subtitleGrey,
-    // fontFamily: 'Sintony-Regular, Helvetica',
-    fontWeight: '400',
+    fontFamily: 'SintonyRegular',
     fontSize: 12,
     letterSpacing: -0.2,
   },

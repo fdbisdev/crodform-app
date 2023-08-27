@@ -17,6 +17,7 @@ module.exports = function (api) {
             "@icons": "./src/assets/icons",
             "@store": "./src/store",
             "@schemas": "./src/schemas",
+            "@images": "./src/assets/images",
         },
           "extensions": [
             ".js",

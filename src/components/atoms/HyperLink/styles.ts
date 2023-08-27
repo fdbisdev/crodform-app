@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   link: {
     color: 'black',
-    // fontFamily: 'Sintony-Regular, Helvetica',
+    fontFamily: 'SintonyRegular',
     fontWeight: '400',
     fontSize: 12,
     letterSpacing: -0.2,
