@@ -4,27 +4,29 @@ import { Text, View } from 'react-native';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Header } from '@organisms';
+import { Title } from '@atoms';
 import { UserLoginSchema } from '@schemas';
 import { IUserLoginForm, NavigationProps, colors } from '@utils';
 import { Button, HookFormInput, HyperLink, Subtitle } from '@atoms';
-import styles from './styles';
 import { ToggleIcon } from '@molecules';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { EyeIcon } from '@icons';
+
+import styles from './styles';
 
 const Login: React.FC = () => {
     const [passwordVisibility, setPasswordVisibility] = useState(false);
 
     const navigation = useNavigation<NavigationProps>();
 
-    const navigateToRegister = () => {
-        navigation.navigate('Register')
-    }
-
     const { control, handleSubmit } = useForm<IUserLoginForm>({
         resolver: zodResolver(UserLoginSchema),
     });
+
+    const navigateToRegister = () => {
+        navigation.navigate('Register')
+    }
 
     const handleLogin: SubmitHandler<IUserLoginForm> = (data) => {
         console.log(data);
@@ -39,7 +41,7 @@ const Login: React.FC = () => {
 
             <Header />
 
-            <Text style={styles.titleText}>Login</Text>
+            <Title>Login</Title>
 
             <HookFormInput
                 control={control}

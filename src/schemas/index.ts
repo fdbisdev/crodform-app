@@ -24,3 +24,17 @@ export const UserLoginSchema = UserSignUpSchema.omit({
     lastName: true,
     termsAndPrivacy: true,
 });
+
+export type IUserSignUpForm = z.infer<typeof UserSignUpSchema>;
+
+export const UserSchema = UserSignUpSchema.omit({
+    password: true,
+    termsAndPrivacy: true,
+  }).extend({
+    balance: z.number().default(0),
+    totalPortfolio: z.number().default(0),
+    portfolioRatio: z.number().default(0),
+  });
+
+  
+export type IUser = z.infer<typeof UserSchema>;

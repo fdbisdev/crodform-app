@@ -9,3 +9,6 @@ export { IHyperLink } from './types';
 export { NavigationProps } from './types';
 export { IIcon } from './types';
 export { IFocusableIcon } from './types';
+export { IPressIcon } from './types';
+export { ITitle } from './types';
+export { ICheckbox } from './types';

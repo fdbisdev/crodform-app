@@ -1,8 +1,8 @@
-import { ReactNode } from "react";
+import { ComponentType, ReactNode } from "react";
 import { Control } from "react-hook-form";
 import * as z from 'zod';
-import { StyleProp, TextInputProps, TextStyle, ViewStyle } from "react-native";
-import { UserLoginSchema, UserSignUpSchema } from "src/schemas";
+import { PressableProps, StyleProp, TextInputProps, TextStyle, ViewStyle } from "react-native";
+import { UserLoginSchema } from "src/schemas";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 export type RootParamList = {
@@ -62,3 +62,26 @@ export interface IIcon {
 export type IFocusableIcon = IIcon & {
     focused: boolean;
 };
+
+export type IPressIcon = PressableProps & Partial<IIcon> & {
+    Icon: ComponentType<IFocusableIcon>;
+    subtitle?: string;
+    subtitleStyle?: StyleProp<TextStyle>;
+    containerStyle?: StyleProp<ViewStyle>;
+    accentColor?: string;
+    size?: number;
+}
+
+export interface ITitle {
+    style?: StyleProp<TextStyle>;
+    children: string | React.ReactNode;
+}
+  
+export interface ICheckbox {
+    label?: string;
+    labelStyle?: StyleProp<TextStyle>;
+    setChecked: (checked: boolean | React.ChangeEvent<Element>) => void;
+    isChecked: boolean;
+    style?: StyleProp<ViewStyle>;
+    textComponent?: React.ReactNode;
+}

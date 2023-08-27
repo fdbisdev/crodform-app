@@ -7,15 +7,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     backgroundColor: 'white',
   },
-  titleText: {
-    color: '#000000',
-    marginTop: 24,
-    // fontFamily: 'Sintony-Regular, Helvetica',
-    fontWeight: '600',
-    fontSize: 18,
-    letterSpacing: -0.22,
-    marginBottom: 64,
-  },
   passwordInput: {
     marginTop: 20,
   },

@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { Login } from '@pages';
+import { Login, Register } from '@pages';
 import { RootParamList } from '@utils';
 
 const Stack = createNativeStackNavigator<RootParamList>();
@@ -20,7 +20,10 @@ const Routes: React.FC = () => {
                 )
                 :
                 (
-                    <Stack.Screen name="Login" component={Login} />
+                    <>
+                        <Stack.Screen name="Login" component={Login} />
+                        <Stack.Screen name="Register" component={Register} />
+                    </>
                 ), [])
 
 

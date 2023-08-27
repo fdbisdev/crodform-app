@@ -5,6 +5,7 @@ import { PressableIcon } from '@molecules';
 import { useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { IHeader } from '@utils';
+import { ArrowLeftIcon } from '@icons';
 
 const Header: React.FC<IHeader> = ({ canGoBack, title, subtitle }: IHeader) => {
     const { top } = useSafeAreaInsets();
@@ -20,12 +21,18 @@ const Header: React.FC<IHeader> = ({ canGoBack, title, subtitle }: IHeader) => {
         <View style={[styles.container,
         {
             paddingTop: top,
-            height: top + 60
+            height: top + 64
         }
         ]}>
             {
                 canGoBack && (
-                    <PressableIcon />
+                    <PressableIcon
+                        style={styles.backIcon}
+                        containerStyle={styles.backIconContainer}
+                        Icon={ArrowLeftIcon}
+                        color="black"
+                        onPress={handleGoBack}
+                    />
                 )
             }
             {

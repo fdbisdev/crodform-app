@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: Dimensions.get('window').width * 0.1,
     bottom: 0,
+    top: 0,
   },
   backIconContainer: {
     zIndex: 1,
