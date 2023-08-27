@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   terms: {
-    width: '75%',
+    width: '85%',
 },
   termsLabel: {
     paddingLeft: 10,

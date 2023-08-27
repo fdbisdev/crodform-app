@@ -27,9 +27,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
   },
   checkbox: {
-    width: '8%',
+    width: '7%',
     height: '70%',
-    marginRight: 18,
+    marginRight: 10,
   }
 });
 

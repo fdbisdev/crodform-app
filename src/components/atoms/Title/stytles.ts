@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     fontFamily: 'SintonyBold',
     fontSize: 18,
     letterSpacing: -0.22,
-    marginBottom: 58,
+    marginBottom: 42,
     marginTop: 24,
   },
 });
