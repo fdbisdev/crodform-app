@@ -14,9 +14,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   fundLabel: {
-    fontFamily: 'Sintony-Refular, Heveltica',
+    fontFamily: 'SintonyBold',
     fontSize: 12,
-    fontWeight: '600',
     color: 'black',
     marginTop: 5,
     marginBottom: 5,
@@ -33,9 +32,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   fundStatsLabel: {
-    fontFamily: 'Sintony-Refular, Heveltica',
+    fontFamily: 'SintonyRegular',
     fontSize: 14,
-    fontWeight: '400',
     color: 'black',
     lineHeight: 17,
     letterSpacing: -0.2,

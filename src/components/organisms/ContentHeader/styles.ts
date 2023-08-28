@@ -33,16 +33,14 @@ const styles = StyleSheet.create({
   },
   infoText: {
     color: '#000000',
-    fontFamily: 'Sintony-Regular, Helvetica',
-    fontWeight: '600',
+    fontFamily: 'SintonyBold',
     fontSize: 14,
     letterSpacing: -0.2,
     lineHeight: 17,
   },
   portfolioText: {
     color: '#000000',
-    fontFamily: 'Sintony-Regular, Helvetica',
-    fontWeight: '600',
+    fontFamily: 'SintonyBold',
     fontSize: 24,
     letterSpacing: -0.02,
     marginBottom: -2.5,
@@ -67,8 +65,7 @@ const styles = StyleSheet.create({
   rewardsText: {
     marginLeft: 4,
     color: colors.primary,
-    fontFamily: 'Sintony-Regular, Helvetica',
-    fontWeight: '600',
+    fontFamily: 'SintonyBold',
     fontSize: 11,
     letterSpacing: -0.02,
     textAlign: 'center',

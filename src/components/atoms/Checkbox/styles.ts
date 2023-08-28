@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
     color: colors.subtitleGrey,
     fontFamily: 'SintonyRegular',
     fontSize: 12,
-    fontWeight: '400',
     lineHeight: 15,
     letterSpacing: -0.2,
   },

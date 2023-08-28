@@ -3,14 +3,14 @@ import React, { useEffect, useMemo } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { Login, Register, Home } from '@pages';
+import { Login, Register, Home, Trade, Portfolio } from '@pages';
 import { ACCESS_TOKEN_KEY, HomeStackParams, RootParamList } from '@utils';
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
 import storage from '../services/storage/index';
 import { logIn } from '../redux/slices/user';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomTabs } from '@organisms';
-import HomeTabIcon from '../../src/assets/icons/HomeTabIcon';
+import { HomeTabIcon, PortfolioTabIcon, TradeTabIcon } from '../../src/assets/icons';
 
 const Stack = createNativeStackNavigator<RootParamList>();
 const HomeStack = createNativeStackNavigator<HomeStackParams>();
@@ -42,6 +42,16 @@ const AppTabScreen = () => (
                 tabBarIcon: HomeTabIcon
             }}
             component={HomeStackScreen}
+        />
+        <AppTab.Screen
+            name="Trade"
+            options={{ tabBarLabel: 'Trade', tabBarIcon: TradeTabIcon }}
+            component={Trade}
+        />
+        <AppTab.Screen
+            name="Portfolio"
+            options={{ tabBarLabel: 'Portfolio', tabBarIcon: PortfolioTabIcon }}
+            component={Portfolio}
         />
     </AppTab.Navigator>
 );

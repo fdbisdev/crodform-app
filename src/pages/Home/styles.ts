@@ -35,12 +35,30 @@ const styles = StyleSheet.create({
     width: '50%',
   },
   carbonTitle: {
-    fontFamily: 'Sintony-Regular, Helvetica',
+    fontFamily: 'SintonyBold',
     color: 'white',
     fontSize: 16,
-    fontWeight: '600',
     marginBottom: 10,
   },
+  cardTemplate: {
+    marginTop: 20,
+    marginBottom: 20,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    width: '90%',
+  },
+  cardInnerContainer: {
+    width: '47.5%',
+    height: 200,
+    backgroundColor: '#f4f5f5',
+    borderRadius: 10,
+    paddingLeft: 12,
+    paddingTop: 24,
+  },
+  cardText: {
+    fontSize: 14,
+    fontFamily: 'SintonyBold',
+  }
 });
 
 export default styles;

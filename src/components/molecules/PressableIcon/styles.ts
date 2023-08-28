@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
 },
   subtitle: {
     fontSize: 16,
-    fontWeight: '500',
+    fontFamily: 'SintonyBold',
     lineHeight: 24,
     color: 'white',
     marginTop: 16,

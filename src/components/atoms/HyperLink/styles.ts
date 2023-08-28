@@ -4,7 +4,6 @@ const styles = StyleSheet.create({
   link: {
     color: 'black',
     fontFamily: 'SintonyRegular',
-    fontWeight: '400',
     fontSize: 12,
     letterSpacing: -0.2,
     textDecorationLine: 'underline',

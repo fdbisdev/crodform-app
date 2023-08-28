@@ -9,3 +9,6 @@ export { default as LossIcon } from './LossIcon';
 export { default as CoinIcon } from './CoinIcon';
 export { default as BellIcon } from './BellIcon';
 export { default as ProfileIcon } from './ProfileIcon';
+export { default as PortfolioTabIcon } from './PortfolioTabIcon';
+export { default as TradeTabIcon } from './TradeTabIcon';
+export { default as HomeTabIcon } from './HomeTabIcon';

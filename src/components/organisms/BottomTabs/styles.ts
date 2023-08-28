@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 14,
     lineHeight: 24,
-    fontWeight: '600',
+    fontFamily: 'SintonyBold',
   },
 });
 
