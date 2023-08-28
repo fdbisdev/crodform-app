@@ -15,9 +15,10 @@ module.exports = function (api) {
             "@utils": "./src/utils",
             "@routes": "./src/routes",
             "@icons": "./src/assets/icons",
-            "@store": "./src/store",
+            "@redux": "./src/redux",
             "@schemas": "./src/schemas",
             "@images": "./src/assets/images",
+            "@services": "./src/services",
         },
           "extensions": [
             ".js",

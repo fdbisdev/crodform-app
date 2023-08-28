@@ -32,8 +32,8 @@
         "@utils": [
             "src/utils/index.ts"
         ],
-        "@store": [
-            "src/store/index.ts"
+        "@redux/*": [
+            "src/redux/"
         ],
         "@routes": [
             "src/routes/index.ts"
@@ -46,6 +46,9 @@
         ],
         "@images": [
             "src/assets/images/index.ts"
+        ],
+        "@services": [
+            "src/services/index.ts"
         ],
     }
   },

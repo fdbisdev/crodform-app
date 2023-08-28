@@ -12,3 +12,4 @@ export { IFocusableIcon } from './types';
 export { IPressIcon } from './types';
 export { ITitle } from './types';
 export { ICheckbox } from './types';
+export { ACCESS_TOKEN_KEY } from './constants';

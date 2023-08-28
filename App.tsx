@@ -8,6 +8,8 @@ import {
     Sintony_700Bold as SintonyBold,
     useFonts,
 } from '@expo-google-fonts/sintony'
+import { Provider } from 'react-redux';
+import store from './src/redux/store';
 
 const App: React.FC = () => {
     const [fontsLoaded] = useFonts({
@@ -21,7 +23,10 @@ const App: React.FC = () => {
 
     return (
         <SafeAreaProvider style={styles.container}>
-            <Routes />
+            <StatusBar style="auto" />
+            <Provider store={store}>
+                <Routes />
+            </Provider>
         </SafeAreaProvider>
     );
 }
