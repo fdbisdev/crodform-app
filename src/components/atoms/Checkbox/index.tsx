@@ -1,11 +1,9 @@
-import CheckIcon from '@icons';
 import { View } from 'react-native';
 import { colors } from '@utils';
 import React from 'react';
-import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 import { Checkbox as ExpoCheckBox } from 'expo-checkbox'
 import styles from './styles';
-import { ICheckbox } from './types';
+import { ICheckbox } from '@utils';
 
 const Checkbox: React.FC<ICheckbox> = ({
     setChecked,
@@ -20,7 +18,6 @@ const Checkbox: React.FC<ICheckbox> = ({
                 style={styles.checkbox}
                 value={isChecked}
                 onValueChange={setChecked}
-                ImageComponent={CheckIcon}
                 color={isChecked ? colors.primary : colors.subtitleGrey}
             />
             {textComponent}

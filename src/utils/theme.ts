@@ -9,6 +9,8 @@ const colors = {
     success: '#005500',
     error: '#550000',
     white: '#ffffff',
+    statusGreen: '#0FDF8F',
+    tabBarBorder: 'rgba(148, 163, 220, 0.3)',
 }
 
 

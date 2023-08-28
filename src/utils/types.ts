@@ -4,12 +4,23 @@ import * as z from 'zod';
 import { PressableProps, StyleProp, TextInputProps, TextStyle, ViewStyle } from "react-native";
 import { UserLoginSchema } from "src/schemas";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { NavigatorScreenParams } from "@react-navigation/native";
+
+export type NavigatorParams = {
+    HomeStack: NavigatorScreenParams<HomeStackParams>;
+  };
 
 export type RootParamList = {
     Login: undefined;
     Register: undefined;
     Home: undefined;
+    AppTab:  NavigatorScreenParams<NavigatorParams>;
 };
+
+export type HomeStackParams = {
+    Home: undefined;
+    Asset: { label: string; code: string };
+ };
 
 export type InputProps = TextInputProps & {
     icon?: ReactNode;

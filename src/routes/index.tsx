@@ -4,13 +4,47 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
 import { Login, Register, Home } from '@pages';
-import { ACCESS_TOKEN_KEY, RootParamList } from '@utils';
+import { ACCESS_TOKEN_KEY, HomeStackParams, RootParamList } from '@utils';
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
 import storage from '../services/storage/index';
 import { logIn } from '../redux/slices/user';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { BottomTabs } from '@organisms';
+import HomeTabIcon from '../../src/assets/icons/HomeTabIcon';
 
 const Stack = createNativeStackNavigator<RootParamList>();
+const HomeStack = createNativeStackNavigator<HomeStackParams>();
+const AppTab = createBottomTabNavigator();
 
+const HomeStackScreen = () => (
+    <HomeStack.Navigator
+        screenOptions={{
+            headerShown: false,
+        }}
+    >
+        <HomeStack.Screen name="Home" component={Home} />
+    </HomeStack.Navigator>
+);
+
+const AppTabScreen = () => (
+    <AppTab.Navigator
+        screenOptions={{
+            headerShown: false,
+        }}
+        initialRouteName="HomeStack"
+        tabBar={BottomTabs}
+        id="AppBottomNavigator"
+    >
+        <AppTab.Screen
+            name="Home"
+            options={{
+                tabBarLabel: 'Home',
+                tabBarIcon: HomeTabIcon
+            }}
+            component={HomeStackScreen}
+        />
+    </AppTab.Navigator>
+);
 
 const Routes: React.FC = () => {
     const { isLoggedIn } = useAppSelector(state => state.user)
@@ -32,7 +66,10 @@ const Routes: React.FC = () => {
         () =>
             isLoggedIn ?
                 (
-                    <Stack.Screen name="Home" component={Home} />
+                    <Stack.Screen
+                        name="AppTab"
+                        component={AppTabScreen}
+                    />
                 )
                 :
                 (

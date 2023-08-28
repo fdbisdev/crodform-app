@@ -13,3 +13,8 @@ export { IPressIcon } from './types';
 export { ITitle } from './types';
 export { ICheckbox } from './types';
 export { ACCESS_TOKEN_KEY } from './constants';
+export { plantFundData } from './graph';
+export { solarFundData } from './graph';
+export { windFundDetailedData } from './graph';
+export { windFundData } from './graph';
+export { HomeStackParams } from './types';
