@@ -50,10 +50,10 @@
    First of all, correctly configure the React Native development environment on your machine, see https://react-native.rocketseat.dev/
    
    - Clone this repository:
-   $ git clone https://github.com/fdbisdev/crodform-app crodform-app
+   $ git clone https://github.com/fdbisdev/crowdform-app crowdform-app
 
    - Enter in directory:
-   $ cd crodform-app
+   $ cd crowdform-app
 
    - For install dependencies:
    $ yarn
