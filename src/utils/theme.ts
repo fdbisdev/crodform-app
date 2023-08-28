@@ -6,6 +6,9 @@ const colors = {
     statusRed: '#EE8688',
     pressedPrimary: '#3E61DE',
     disabledGrey: '#F7EFFF',
+    success: '#005500',
+    error: '#550000',
+    white: '#ffffff',
 }
 
 

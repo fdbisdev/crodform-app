@@ -3,7 +3,6 @@ import { IUser, IUserSignUpForm } from '@schemas';
 import { ACCESS_TOKEN_KEY, IUserLoginForm } from '@utils';
 import storage from '../../services/storage';
 
-
 interface IUserState {
   user: IUser;
   token: string;
@@ -24,6 +23,7 @@ const initialState: IUserState = {
   isLoggedIn: false,
 };
 
+
 export const tryUserLogin = createAsyncThunk<IUser | null, IUserLoginForm>(
   'user/tryUserLogin',
   async ({ email }) => {
@@ -33,15 +33,14 @@ export const tryUserLogin = createAsyncThunk<IUser | null, IUserLoginForm>(
 
       return {
         email,
-        firstName: 'John',
-        lastName: 'Doe',
+        firstName: 'Felipe',
+        lastName: 'Bis',
         balance: 161100,
         totalPortfolio: 517770,
         portfolioRatio: 0.2305,
       };
     } catch (e) {
       console.error('Error while cacheing user token: ', e);
-        //do nothing
     }
 
     return null;
@@ -61,7 +60,8 @@ export const userLogout = createAsyncThunk<void, void>(
 
 export const tryUserSignUp = createAsyncThunk<void, IUserSignUpForm>(
   'user/tryUserSignUp',
-  async (userData, { rejectWithValue }) => {
+  async () => {
+
   },
 );
 
@@ -77,8 +77,8 @@ const userSlice = createSlice({
         isLoggedIn: true,
         user: {
           email,
-          firstName: 'John',
-          lastName: 'Doe',
+          firstName: 'Felipe',
+          lastName: 'Bis',
           balance: 161100,
           totalPortfolio: 517770,
           portfolioRatio: 0.2305,

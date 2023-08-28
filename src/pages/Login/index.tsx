@@ -1,5 +1,5 @@
 import { useAppDispatch } from '@redux/hooks';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     Text,
     View,
@@ -19,7 +19,7 @@ import { ToggleIcon } from '@molecules';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { EyeIcon } from '@icons';
-import { tryUserLogin } from '@redux/slices/user';
+import { tryUserLogin, logIn } from '@redux/slices/user';
 
 import styles from './styles';
 
@@ -45,6 +45,7 @@ const Login: React.FC = () => {
     const changePasswordVisibility = () => {
         setPasswordVisibility(oldState => !oldState);
     };
+
 
     return (
         <SafeAreaView edges={['bottom']} style={styles.container}>
