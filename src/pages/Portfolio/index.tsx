@@ -1,8 +1,13 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
+import globalStyles from '../../../src/globals/styles';
 
 const Portfolio: React.FC = () => {
-    return <View />;
+    return (
+        <View style={globalStyles.container}>
+            <Text style={globalStyles.title}>Portfolio</Text>
+        </View>
+    )
 }
 
 export default Portfolio;

@@ -3,7 +3,7 @@ import React, { useEffect, useMemo } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { Login, Register, Home, Trade, Portfolio } from '@pages';
+import { Login, Register, Home, Trade, Portfolio, Asset } from '@pages';
 import { ACCESS_TOKEN_KEY, HomeStackParams, RootParamList } from '@utils';
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
 import storage from '../services/storage/index';
@@ -23,6 +23,7 @@ const HomeStackScreen = () => (
         }}
     >
         <HomeStack.Screen name="Home" component={Home} />
+        <HomeStack.Screen name="Asset" component={Asset} />
     </HomeStack.Navigator>
 );
 

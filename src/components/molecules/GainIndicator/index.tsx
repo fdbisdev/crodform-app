@@ -10,11 +10,11 @@ interface IGainIndicator {
     absoluteGain?: string;
 }
 
-function GainIndicator({
+const GainIndicator = ({
     gain,
     positiveGain = false,
     absoluteGain,
-}: IGainIndicator) {
+}: IGainIndicator) => {
     const gainColor = positiveGain ? colors.statusGreen : colors.statusRed;
 
     return (

@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
   fundsContainer: {
     position: 'relative',
     top: -10,
-    left: '-5%',
-    width: '100%',
+    left: '-3%',
+    width: '95%',
   },
   carbonCredits: {
     flexDirection: 'row',
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   cardTemplate: {
-    marginTop: 20,
+    marginTop: 28,
     marginBottom: 20,
     justifyContent: 'space-between',
     flexDirection: 'row',

@@ -11,6 +11,7 @@ const colors = {
     white: '#ffffff',
     statusGreen: '#0FDF8F',
     tabBarBorder: 'rgba(148, 163, 220, 0.3)',
+    green: '#0FDF8F',
 }
 
 

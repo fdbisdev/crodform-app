@@ -17,12 +17,12 @@ interface IContentHeader {
     positiveGain?: boolean;
 }
 
-function ContentHeader({
+const ContentHeader = ({
     balance,
     portfolio,
     gain,
     positiveGain = false,
-}: IContentHeader) {
+}: IContentHeader) => {
     const { top } = useSafeAreaInsets();
     const dispatch = useAppDispatch();
 
